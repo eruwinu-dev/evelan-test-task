@@ -25,15 +25,15 @@ const UserList = (props: Props) => {
 					<UserItem key={user.id} user={user} />
 				))}
 			</div>
-			{isLoading ? <UserSpinner /> : null}
+
 			<div className="load-more-container">
 				<button
 					type="button"
 					className="load-more-button"
 					onClick={handleAddUsers}
-					disabled={data.total_pages === data.page}
+					disabled={data.total_pages === data.page || isLoading}
 				>
-					Load More
+					{isLoading ? <UserSpinner /> : "Load More"}
 				</button>
 			</div>
 		</section>

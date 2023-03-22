@@ -21,17 +21,20 @@
 	.user-item:hover {
 		@apply shadow-lg;
 	}
+	.user-item > span {
+		@apply text-sm font-bold;
+	}
 	.user-item > h3 {
 		@apply font-semibold;
 	}
 	.user-image {
-		@apply relative w-[75px] h-auto aspect-square rounded-full;
+		@apply relative lg:w-[75px] md:w-[100px] w-[125px] h-auto aspect-square rounded-full;
 	}
 	.load-more-container {
 		@apply mx-auto;
 	}
 	.load-more-container > button {
-		@apply w-fit px-2 py-1.5 font-semibold border-transparent bg-teal-500 rounded-lg text-white;
+		@apply px-2 py-1.5 font-semibold border-transparent bg-teal-500 rounded-lg text-white;
 	}
 	.load-more-button:disabled {
 		@apply bg-teal-500/60 cursor-not-allowed;

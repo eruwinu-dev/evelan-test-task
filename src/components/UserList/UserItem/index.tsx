@@ -17,8 +17,8 @@ const UserItem = ({ user }: Props) => {
 					fill
 					className="rounded-full object-cover p-1"
 					sizes="(max-width: 768px) 75px,
-							(max-width: 75px) 75px,
-							33vw"
+							(max-width: 1200px) 100px,
+							125px"
 				/>
 			</div>
 			<span>{user.id}</span>
